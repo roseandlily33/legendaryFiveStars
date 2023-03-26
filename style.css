@@ -8,12 +8,14 @@
     --White: hsl(0, 0%, 100%);
     --fontFamily: 'League Spartan', sans-serif;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: var(--White);
     display: flex;
     flex-direction: column;
@@ -21,31 +23,39 @@ body{
     text-align: center;
     font-family: var(--fontFamily);
 }
+
 main {
     margin-top: 1em;
 }
+
 h1 {
     font-size: 2.5em;
     color: var(--VeryDarkMagenta);
     line-height: 0.8em;
 }
-p{
+
+p {
     font-size: 1em;
     color: var(--VeryDarkMagenta);
     line-height: 1.4em;
 }
-#stars1, #stars2, #stars3{
+
+#stars1,
+#stars2,
+#stars3 {
     background-color: var(--LightGrayishMagenta);
     border-radius: 15px;
     margin: 1em;
-    padding: 0.8em; 
+    padding: 0.8em;
 }
-#stars h2{
+
+#stars h2 {
     font-size: 1.3em;
     padding-block: 0.2em;
     color: var(--VeryDarkMagenta);
 }
-.info{
+
+.info {
     padding: 0.5em;
 }
 
@@ -60,18 +70,21 @@ p{
     text-align: left;
 
 }
+
 #rating1 h3,
 #rating2 h3,
-#rating3 h3{
+#rating3 h3 {
     font-size: 1.4em;
 }
+
 #rating1 h4,
 #rating2 h4,
-#rating3 h4{
+#rating3 h4 {
     color: var(--SoftPink);
     font-size: 1em;
-    
+
 }
+
 #rating1 p,
 #rating2 p,
 #rating3 p {
@@ -79,17 +92,19 @@ p{
     font-size: 1em;
     padding: 0.5em;
     margin-top: 1.5em;
-   
+
 }
+
 #rating1 img,
 #rating2 img,
-#rating3 img{
+#rating3 img {
     border-radius: 50%;
     float: left;
     height: 50px;
     margin-right: 1.4em;
 }
-.attribution{
+
+.attribution {
     font-size: 0.8em;
     text-align: center;
     background-color: var(--LightGrayishMagenta);
@@ -99,3 +114,72 @@ p{
 
 }
 
+@media screen and (min-width: 700px) {
+    body {}
+
+    main {
+        width: 50%;
+        margin-left: 2em;
+
+    }
+
+    h1 {
+        font-size: 4em;
+        text-align: left;
+    }
+
+    p {
+        font-size: 1em;
+        color: var(--VeryDarkMagenta);
+        line-height: 1.4em;
+        text-align: left;
+    }
+
+    #top {
+        margin: 1em;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #stars {
+        margin-top: 2em;
+        width: 50%;
+    }
+
+    #stars1 {
+        width: 400px;
+        height: 100px;
+    }
+
+    #stars2 {
+        margin-left: 10em;
+        width: 400px;
+        height: 100px;
+    }
+
+    #stars3 {
+        margin-left: 19em;
+        width: 400px;
+        height: 100px;
+    }
+ 
+    #ratingSection {
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+        justify-content: space-evenly;
+    }
+
+    #rating1,
+    #rating2,
+    #rating3 {
+        padding: 1.5em;
+    }
+    #rating2{
+        margin-top: 2em;
+    }
+    #rating3{
+        margin-top: 4em;
+    }
+}

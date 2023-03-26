@@ -115,33 +115,26 @@ p {
 }
 
 @media screen and (min-width: 700px) {
-    body {}
-
     main {
         width: 50%;
         margin-left: 2em;
 
     }
-
     h1 {
         font-size: 4em;
         text-align: left;
     }
-
     p {
         font-size: 1em;
         color: var(--VeryDarkMagenta);
         line-height: 1.4em;
         text-align: left;
     }
-
     #top {
         margin: 1em;
         display: flex;
         flex-direction: row;
-
     }
-
     #stars {
         margin-top: 2em;
         width: 50%;
@@ -170,7 +163,6 @@ p {
         padding: 1em;
         justify-content: space-evenly;
     }
-
     #rating1,
     #rating2,
     #rating3 {
